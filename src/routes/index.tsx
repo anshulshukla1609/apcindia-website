@@ -275,7 +275,7 @@ function Index() {
               e.preventDefault();
               setSent(true);
             }}
-            style={{ background: "#000", color: NAVY, padding: 32, fontFamily: "system-ui" }}
+            style={{ background: "#fff", color: NAVY, padding: 32, fontFamily: "system-ui" }}
           >
             <h3 style={{ fontSize: 20, fontWeight: 600 }}>Request a consultation</h3>
             {sent ? (
