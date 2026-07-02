@@ -47,3 +47,11 @@ Edit content in `src/routes/index.tsx` (team, services, copy). Rebuild and re-up
 - CA Sharad Shukla — +91-9956700632
 - CA Ankur Malhotra — +91-9918647667
 - CA Shikhar Malhotra — +91-9839604389
+
+## 8. Corporate Office
+
+117/K-53, Sarvodaya Nagar, Kanpur, Uttar Pradesh 208005, India
+
+## 9. Official Email
+
+alokpandeyandco@gmail.com
