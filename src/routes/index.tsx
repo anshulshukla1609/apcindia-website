@@ -55,10 +55,10 @@ function Index() {
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-6 py-2">
           <span>Chartered Accountants · Established Excellence</span>
           <span>
-            <a href="mailto:info@alokpandeyco.com" style={{ color: "#fff" }}>
-              info@alokpandeyco.com
+            <a href="mailto:alokpandeyandco@gmail.com" style={{ color: "#fff" }}>
+              alokpandeyandco@gmail.com
             </a>{" "}
-            · <a href="tel:+919889471057" style={{ color: GOLD }}>+91-9889471057</a>
+            · <a href="tel:+919889929292" style={{ color: GOLD }}>+91-9889929292</a>
           </span>
         </div>
       </div>
