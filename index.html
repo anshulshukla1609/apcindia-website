@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ALOK PANDEY & CO. — Chartered Accountants, Kanpur & Gurugram</title>
+<meta name="description" content="ALOK PANDEY & CO., Chartered Accountants (est. 2013). Audit, taxation, GST and advisory for banks, government undertakings and corporates. Kanpur & Gurugram." />
+<meta property="og:title" content="ALOK PANDEY & CO. — Chartered Accountants" />
+<meta property="og:description" content="Institutional-grade audit, taxation and advisory. Est. 2013. Kanpur & Gurugram." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+  :root{
+    --navy:#0A1F44; --navy-deep:#061434; --gold:#B8912F; --ivory:#FBF9F3;
+    --muted:rgba(10,31,68,.7); --line:rgba(10,31,68,.13);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--ivory);color:var(--navy);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .sans{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  h1,h2,h3{font-weight:400;margin:0}
+  h1{font-size:clamp(2rem,4.5vw,3.75rem);line-height:1.15}
+  h2{font-size:clamp(1.6rem,3vw,2.25rem)}
+  .eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;font-family:system-ui,sans-serif;text-transform:uppercase}
+  .btn{display:inline-block;padding:14px 28px;font-family:system-ui,sans-serif;letter-spacing:1px;font-weight:600;text-decoration:none}
+  .btn-primary{background:var(--navy);color:#fff}
+  .btn-outline{border:1px solid var(--navy);color:var(--navy)}
+
+  /* Top bar */
+  .topbar{background:var(--navy-deep);color:#fff;font-size:13px}
+  .topbar .wrap{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;padding:8px 24px}
+  .topbar a{color:#fff;text-decoration:none}
+  .topbar .phone{color:var(--gold)}
+
+  /* Nav */
+  header.nav{background:#fff;border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo{width:44px;height:44px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:700;letter-spacing:1px}
+  .brand-name{font-weight:700;letter-spacing:1px}
+  .brand-sub{font-size:11px;opacity:.7;letter-spacing:2px}
+  nav ul{display:none;gap:32px;list-style:none;margin:0;padding:0;font-family:system-ui,sans-serif;font-size:14px}
+  nav ul a{text-decoration:none}
+  @media(min-width:900px){nav ul{display:flex}}
+
+  /* Hero */
+  .hero{background:#fff}
+  .hero-grid{display:grid;gap:40px;padding:80px 24px}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.4fr 1fr;padding:112px 24px}}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;font-family:system-ui,sans-serif}
+  .badge{border:1px solid rgba(10,31,68,.2);padding:6px 12px;font-size:12px;letter-spacing:1px}
+  .hero h1{margin-top:16px}
+  .hero .accent{color:var(--gold);font-style:italic}
+  .hero p.lead{margin-top:24px;max-width:640px;font-size:17px;line-height:1.75;color:var(--muted)}
+  .hero .cta{margin-top:40px;display:flex;flex-wrap:wrap;gap:16px}
+  aside.quote{border-left:3px solid var(--gold);padding:16px 24px;background:var(--ivory)}
+  aside.quote p{margin:0;font-style:italic;font-size:17px;line-height:1.7;color:rgba(10,31,68,.85)}
+  aside.quote .sig{margin-top:16px;font-family:system-ui,sans-serif;font-size:12px;letter-spacing:2px;color:var(--gold)}
+
+  /* Stats */
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;padding:40px 24px}
+  @media(min-width:900px){.stats-grid{grid-template-columns:repeat(5,1fr)}}
+  .stat-n{color:var(--gold);font-size:40px}
+  .stat-l{font-family:system-ui,sans-serif;font-size:12px;letter-spacing:2px;color:rgba(10,31,68,.66);text-transform:uppercase;margin-top:4px}
+
+  /* Sections */
+  section{padding:96px 0}
+  section.white{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  section.navy{background:var(--navy);color:#fff}
+  section.deep{background:var(--navy-deep);color:#fff}
+
+  /* Services */
+  .svc-grid{display:grid;gap:1px;background:rgba(10,31,68,.13);grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:48px}
+  .svc{background:var(--ivory);padding:32px;min-height:220px}
+  .svc-num{color:var(--gold);font-size:12px;letter-spacing:2px;font-family:system-ui,sans-serif}
+  .svc h3{margin-top:12px;font-size:20px;font-weight:500}
+  .svc p{margin-top:12px;color:rgba(10,31,68,.7);font-size:15px}
+
+  /* Team */
+  .team-grid{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:48px}
+  .partner{background:#fff;border:1px solid rgba(10,31,68,.13);display:flex;flex-direction:column}
+  .partner .photo{aspect-ratio:3/4;background:var(--navy-deep);overflow:hidden}
+  .partner .photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+  .partner .body{padding:24px}
+  .partner h3{font-size:20px;font-weight:600}
+  .partner .role{color:var(--gold);font-size:12px;letter-spacing:2px;margin-top:4px;font-family:system-ui,sans-serif;text-transform:uppercase}
+  .partner .quals{margin-top:10px;font-family:system-ui,sans-serif;font-size:13px;font-weight:600}
+  .partner .bio{margin-top:14px;color:rgba(10,31,68,.72);font-size:14.5px}
+  .partner .certs{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-family:system-ui,sans-serif;font-size:12.5px;color:rgba(10,31,68,.6)}
+  .partner .certs .lbl{color:var(--gold);letter-spacing:1.5px}
+  .partner .tel{display:inline-block;margin-top:16px;border-top:1px solid var(--gold);padding-top:12px;font-family:system-ui,sans-serif;font-size:15px;font-weight:600;text-decoration:none}
+
+  /* Experience */
+  .exp-grid{display:grid;gap:40px;margin-top:48px;font-family:system-ui,sans-serif;font-size:14.5px;line-height:1.7}
+  @media(min-width:900px){.exp-grid{grid-template-columns:repeat(3,1fr)}}
+  .exp h4{color:var(--gold);letter-spacing:2px;font-size:12px;margin:0 0 12px;font-weight:400;text-transform:uppercase}
+  .exp ul{margin:0;padding-left:0;list-style:none;color:rgba(255,255,255,.8)}
+  .exp li{margin-bottom:4px}
+
+  /* Offices */
+  .off-grid{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:48px}
+  .office{border-left:3px solid var(--gold);padding:8px 0 8px 24px}
+  .office .lbl{color:var(--gold);font-size:12px;letter-spacing:2px;font-family:system-ui,sans-serif;text-transform:uppercase}
+  .office address{margin-top:10px;font-style:normal;font-size:15.5px;line-height:1.7}
+
+  /* Contact */
+  .contact-grid{display:grid;gap:64px;padding:0 24px}
+  @media(min-width:900px){.contact-grid{grid-template-columns:1fr 1fr}}
+  .contact .lbl{color:var(--gold);font-size:11px;letter-spacing:2px;font-family:system-ui,sans-serif}
+  .contact .block{margin-top:32px;font-family:system-ui,sans-serif;font-size:15px}
+  .primary-lines{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:12px}
+  .primary-lines .line{padding:14px;background:rgba(10,31,68,.4);border-left:3px solid var(--gold)}
+  .primary-lines .name{font-size:13px;color:rgba(255,255,255,.8)}
+  .primary-lines a{color:var(--gold);font-size:16px;font-weight:600;text-decoration:none}
+  form.enquiry{background:#fff;color:var(--navy);padding:32px;font-family:system-ui,sans-serif}
+  form.enquiry input,form.enquiry textarea{display:block;width:100%;margin-top:16px;padding:12px;border:1px solid rgba(10,31,68,.27);font:inherit}
+  form.enquiry button{margin-top:20px;background:var(--navy);color:#fff;padding:14px 28px;letter-spacing:1px;font-weight:600;width:100%;border:0;cursor:pointer}
+
+  /* About */
+  .about-grid{display:grid;gap:48px}
+  @media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+  .about p{font-size:16px;line-height:1.8;color:rgba(10,31,68,.8)}
+
+  footer{background:#04102a;color:rgba(255,255,255,.7);font-family:system-ui,sans-serif;font-size:13px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;padding:32px 24px}
+</style>
+</head>
+<body id="top">
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Chartered Accountants · Established 2013 · Kanpur · Gurugram</span>
+    <span><a href="mailto:alokpandeyandco@gmail.com">alokpandeyandco@gmail.com</a> · <a class="phone" href="tel:+919889471057">+91-9889471057</a></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <div class="logo">AP</div>
+      <div>
+        <div class="brand-name">ALOK PANDEY &amp; CO.</div>
+        <div class="brand-sub">CHARTERED ACCOUNTANTS · EST. 2013</div>
+      </div>
+    </a>
+    <nav><ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#offices">Offices</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul></nav>
+    <a class="btn btn-primary sans" href="#contact" style="font-size:13px;padding:10px 20px">SCHEDULE CONSULTATION</a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badges">
+        <span class="badge">ICAI FRN 017912C</span>
+        <span class="badge">RBI Reg. 1011479</span>
+        <span class="badge">CAG Reg. CR6109</span>
+      </div>
+      <div class="eyebrow" style="margin-top:32px">CHARTERED ACCOUNTANTS · ESTABLISHED 2013</div>
+      <h1>Trusted Advisors in<br><span class="accent">Audit &amp; Taxation</span></h1>
+      <p class="lead">Institutional-grade compliance and advisory for India's leading financial, government and corporate sectors — delivered by a partner-led practice from Kanpur and Gurugram.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">SCHEDULE CONSULTATION →</a>
+        <a class="btn btn-outline" href="#services">OUR SERVICES</a>
+      </div>
+    </div>
+    <aside class="quote">
+      <p>"Integrity and precision have been the cornerstones of our practice since our founding in Kanpur."</p>
+      <div class="sig">— THE PARTNERSHIP</div>
+    </aside>
+  </div>
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div><div class="stat-n">12+</div><div class="stat-l">Years of Practice</div></div>
+      <div><div class="stat-n">5</div><div class="stat-l">Partners</div></div>
+      <div><div class="stat-n">9+</div><div class="stat-l">Support Professionals</div></div>
+      <div><div class="stat-n">50+</div><div class="stat-l">Government Assignments</div></div>
+      <div><div class="stat-n">100+</div><div class="stat-l">Bank Audit Engagements</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="white" style="padding:96px 0">
+  <div class="wrap">
+    <div class="eyebrow">SERVICES</div>
+    <h2 style="margin-top:16px">A full spectrum of professional services.</h2>
+    <div class="svc-grid">
+      <div class="svc"><div class="svc-num">01</div><h3>Audit &amp; Assurance</h3><p>Statutory, internal, concurrent, revenue and stock audits — including bank branch audits for PSU banks — conducted with rigour and independence.</p></div>
+      <div class="svc"><div class="svc-num">02</div><h3>Direct Taxation</h3><p>Income tax planning, return filing, tax audits, scrutiny assessments, appeals and representation before tax authorities.</p></div>
+      <div class="svc"><div class="svc-num">03</div><h3>GST &amp; Indirect Tax</h3><p>Registrations, returns, refunds, departmental audits and litigation support under the GST regime.</p></div>
+      <div class="svc"><div class="svc-num">04</div><h3>Corporate &amp; Government Advisory</h3><p>Advisory and accounting engagements for PSUs, government boards, corporations and Companies Act statutory audits.</p></div>
+      <div class="svc"><div class="svc-num">05</div><h3>Accounting &amp; Outsourcing</h3><p>Bookkeeping, payroll, MIS, ERP implementations (Microsoft Navision) and virtual CFO services.</p></div>
+      <div class="svc"><div class="svc-num">06</div><h3>Business &amp; Finance Consulting</h3><p>Project finance, working capital funding, systems implementation, contact-point verifications and due diligence.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="wrap">
+    <div class="eyebrow">OUR PARTNERS</div>
+    <h2 style="margin-top:16px">Leadership you can reach directly.</h2>
+    <div class="team-grid">
+
+      <article class="partner">
+        <div class="photo"><img src="images/alok.png" alt="Portrait of CA Alok Pandey" loading="lazy"></div>
+        <div class="body">
+          <h3>CA Alok Pandey</h3>
+          <div class="role">Founder &amp; Managing Partner</div>
+          <div class="quals">FCA · M.Com. · LL.B.</div>
+          <p class="bio">Founder of the firm since 2013, CA Alok Pandey leads statutory audit, government assignments and forensic engagements. He has led bank branch audits for Punjab &amp; Sindh Bank and Bank of India, and heads accounting engagements for UPSIDA, ALIMCO, GSTAT and other state undertakings.</p>
+          <div class="certs"><span class="lbl">CERTIFICATIONS · </span>Certified Peer Reviewer (ICAI) · Forensic &amp; Fraud Detection Auditor (ICAI) · Certificate in Concurrent Audit (ICAI) · Certificate in Public Finance &amp; Government Auditor (ICAI) · Certificate in Internal Audit (ICAI) · AICA Level 1</div>
+          <a class="tel" href="tel:+919889471057">+91-9889471057</a>
+        </div>
+      </article>
+
+      <article class="partner">
+        <div class="photo"><img src="images/anshul.png" alt="Portrait of CA Anshul Shukla" loading="lazy"></div>
+        <div class="body">
+          <h3>CA Anshul Shukla</h3>
+          <div class="role">Partner — Audit &amp; Assurance</div>
+          <div class="quals">ACA · M.Com. · LL.B.</div>
+          <p class="bio">Anshul heads the assurance practice with focus on bank concurrent audits, revenue audits and forensic reviews. He has led concurrent audits for Central Bank of India, Baroda UP Bank, Aryavart Bank and Uttar Pradesh Gramin Bank.</p>
+          <div class="certs"><span class="lbl">CERTIFICATIONS · </span>Forensic &amp; Fraud Detection Auditor (FAFD-ICAI) · Certificate in Public Finance &amp; Government Auditor (ICAI) · Certified Concurrent Auditor (ICAI) · AICA Level 1</div>
+          <a class="tel" href="tel:+919889929292">+91-9889929292</a>
+        </div>
+      </article>
+
+      <article class="partner">
+        <div class="photo"><img src="images/sharad.png" alt="Portrait of CA Sharad Shukla" loading="lazy"></div>
+        <div class="body">
+          <h3>CA Sharad Shukla</h3>
+          <div class="role">Partner — Taxation</div>
+          <div class="quals">FCA · B.Com.</div>
+          <p class="bio">Sharad specialises in direct and indirect taxation, tax audits, GST audits and representation. He advises corporates and HNIs on tax planning and appears in scrutiny, appellate and DRP proceedings.</p>
+          <div class="certs"><span class="lbl">CERTIFICATIONS · </span>Certified Concurrent Auditor (ICAI) · AICA Level 1</div>
+          <a class="tel" href="tel:+919956700632">+91-9956700632</a>
+        </div>
+      </article>
+
+      <article class="partner">
+        <div class="photo"><img src="images/ankur.png" alt="Portrait of CA Ankur Malhotra" loading="lazy"></div>
+        <div class="body">
+          <h3>CA Ankur Malhotra</h3>
+          <div class="role">Partner — Advisory</div>
+          <div class="quals">FCA · B.Com.</div>
+          <p class="bio">Ankur leads the advisory vertical spanning GST, indirect tax and internal audit for private companies, exporters and manufacturing clients. He anchors the firm's ERP implementation and process assurance engagements.</p>
+          <div class="certs"><span class="lbl">CERTIFICATIONS · </span>Certificate in Internal Audit (ICAI)</div>
+          <a class="tel" href="tel:+919918647667">+91-9918647667</a>
+        </div>
+      </article>
+
+      <article class="partner">
+        <div class="photo"><img src="images/shikhar.png" alt="Portrait of CA Shikhar Mehrotra" loading="lazy"></div>
+        <div class="body">
+          <h3>CA Shikhar Mehrotra</h3>
+          <div class="role">Partner — Corporate Affairs</div>
+          <div class="quals">FCA · B.Com.</div>
+          <p class="bio">Shikhar oversees corporate affairs, statutory audits of companies and business consulting. He works with growth-stage companies on project finance, working capital funding and MIS design.</p>
+          <div class="certs"><span class="lbl">CERTIFICATIONS · </span>Companies Act statutory audit · Corporate advisory</div>
+          <a class="tel" href="tel:+919839604389">+91-9839604389</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="navy">
+  <div class="wrap exp">
+    <div class="eyebrow">SELECT ENGAGEMENTS</div>
+    <h2 style="margin-top:16px">Institutional experience across banks, government and industry.</h2>
+    <div class="exp-grid">
+      <div>
+        <h4>BANKING</h4>
+        <ul>
+          <li>Punjab &amp; Sindh Bank — Statutory Branch Audit</li>
+          <li>Bank of India — Statutory &amp; Stock Audit</li>
+          <li>Central Bank of India — Concurrent &amp; Revenue Audit</li>
+          <li>Baroda UP Bank · Aryavart Bank · UP Gramin Bank</li>
+          <li>Union Bank of India · Indian Bank — Stock Audit</li>
+        </ul>
+      </div>
+      <div>
+        <h4>GOVERNMENT</h4>
+        <ul>
+          <li>UP State Industrial Development Authority (UPSIDA)</li>
+          <li>Artificial Limbs Manufacturing Corporation (ALIMCO)</li>
+          <li>GST Appellate Tribunal (GSTAT) — Principal Bench</li>
+          <li>UP Building &amp; Other Construction Workers Welfare Board</li>
+          <li>UP State Yarn Co. · UP Co-op Spinning Mills Federation</li>
+          <li>DIOS Kanpur Nagar · DIOS Raebareli</li>
+        </ul>
+      </div>
+      <div>
+        <h4>INTERNAL AUDIT &amp; INDUSTRY</h4>
+        <ul>
+          <li>Harcourt Butler Technical University</li>
+          <li>Kamla Nehru Institute of Technology Society</li>
+          <li>Statutory audits of companies under the Companies Act</li>
+          <li>Tax &amp; GST audits, representation and litigation</li>
+          <li>ERP implementations (Microsoft Navision)</li>
+          <li>Project finance &amp; working capital funding</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offices" class="white">
+  <div class="wrap">
+    <div class="eyebrow">OFFICES</div>
+    <h2 style="margin-top:16px">Where to find us.</h2>
+    <div class="off-grid">
+      <div class="office"><div class="lbl">Head Office</div><address>86/291 Afimkothi<br>Near Anwarganj Post Office<br>Kanpur, Uttar Pradesh 208003</address></div>
+      <div class="office"><div class="lbl">Corporate Office</div><address>117/K-53, Sarvodaya Nagar<br>Kanpur, Uttar Pradesh 208005</address></div>
+      <div class="office"><div class="lbl">Kanpur Office</div><address>Flat No 202, 2nd Floor, Naraini Complex<br>Lajpat Nagar, Kanpur 208005</address></div>
+      <div class="office"><div class="lbl">Branch Office — Gurugram</div><address>567 P, Sector 23-23A<br>Near Gate No. 2<br>Gurugram, Haryana 122017</address></div>
+    </div>
+    <p class="sans" style="margin-top:40px;font-size:14px;color:rgba(10,31,68,.66)">Email <a href="mailto:alokpandeyandco@gmail.com" style="color:var(--navy)">alokpandeyandco@gmail.com</a></p>
+  </div>
+</section>
+
+<section id="contact" class="deep contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h2 style="margin-top:16px">We welcome new engagements and enquiries.</h2>
+      <div class="block">
+        <div class="lbl">EMAIL</div>
+        <a href="mailto:alokpandeyandco@gmail.com" style="color:#fff;text-decoration:none">alokpandeyandco@gmail.com</a>
+      </div>
+      <div class="block">
+        <div class="lbl">DIRECT PARTNER LINES</div>
+        <div class="primary-lines">
+          <div class="line"><div class="name">CA Alok Pandey</div><a href="tel:+919889471057">+91-9889471057</a></div>
+          <div class="line"><div class="name">CA Anshul Shukla</div><a href="tel:+919889929292">+91-9889929292</a></div>
+          <div class="line"><div class="name">CA Sharad Shukla</div><a href="tel:+919956700632">+91-9956700632</a></div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="lbl">OTHER PARTNER DESKS</div>
+        <div style="margin-top:6px">CA Ankur Malhotra — <a href="tel:+919918647667" style="color:#fff">+91-9918647667</a></div>
+        <div style="margin-top:6px">CA Shikhar Mehrotra — <a href="tel:+919839604389" style="color:#fff">+91-9839604389</a></div>
+      </div>
+    </div>
+    <form class="enquiry" action="mailto:alokpandeyandco@gmail.com" method="post" enctype="text/plain">
+      <h3 style="font-size:20px;font-weight:600;margin:0">Request a consultation</h3>
+      <input required name="name" placeholder="Full name">
+      <input required type="email" name="email" placeholder="Email address">
+      <input required name="phone" placeholder="Phone">
+      <textarea required name="message" placeholder="How can we help?" rows="4"></textarea>
+      <button type="submit">SUBMIT ENQUIRY</button>
+    </form>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">ABOUT THE FIRM</div>
+      <h2 style="margin-top:16px">A practice built on precision, discretion and enduring client relationships.</h2>
+    </div>
+    <div>
+      <p>Established on 2nd April 2013, ALOK PANDEY &amp; CO. is a multi-disciplinary Chartered Accountancy firm serving public sector banks, government undertakings, corporates and MSMEs across India.</p>
+      <p>The firm is registered with the Institute of Chartered Accountants of India (FRN 017912C), the Reserve Bank of India (1011479) and the Comptroller &amp; Auditor General of India (CR6109). Every engagement is anchored by senior involvement and rigorous quality control.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="y"></span> ALOK PANDEY &amp; CO., Chartered Accountants · ICAI FRN 017912C · RBI 1011479 · CAG CR6109</div>
+    <div>Regulated by the Institute of Chartered Accountants of India</div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
