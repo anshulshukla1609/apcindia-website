@@ -126,42 +126,102 @@
   .office address{margin-top:10px;font-style:normal;font-size:15.5px;line-height:1.7}
 
   /* Contact */
-  .contact-grid{display:grid;gap:50px;align-items:start;padding:0 24px}
-  @media(min-width:900px){.contact-grid{grid-template-columns:55% 45%}}
-  .contact .lbl{color:var(--gold);font-size:11px;letter-spacing:2px;font-family:system-ui,sans-serif}
-  .contact .block{margin-top:32px;font-family:system-ui,sans-serif;font-size:15px}
-  .primary-lines{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:12px}
-  .primary-lines .line{padding:14px;background:rgba(10,31,68,.4);border-left:3px solid var(--gold)}
-  .primary-lines .name{font-size:13px;color:rgba(255,255,255,.8)}
-  .primary-lines a{color:var(--gold);font-size:16px;font-weight:600;text-decoration:none}
+  .contact{padding:96px 0}
+  .contact-grid{
+    display:grid;
+    gap:56px;
+    align-items:start;
+    padding:0 24px
+  }
+  @media(min-width:900px){
+    .contact-grid{grid-template-columns:minmax(0,1.05fr) minmax(380px,.95fr)}
+  }
+  .contact .lbl{
+    color:var(--gold);
+    font-size:11px;
+    letter-spacing:2px;
+    font-family:system-ui,sans-serif;
+    text-transform:uppercase
+  }
+  .contact .block{
+    margin-top:32px;
+    font-family:system-ui,sans-serif;
+    font-size:15px
+  }
+  .primary-lines{
+    display:grid;
+    gap:12px;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    margin-top:12px
+  }
+  .primary-lines .line{
+    padding:14px;
+    background:rgba(10,31,68,.4);
+    border-left:3px solid var(--gold)
+  }
+  .primary-lines .name{
+    font-size:13px;
+    color:rgba(255,255,255,.8)
+  }
+  .primary-lines a{
+    color:var(--gold);
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none
+  }
+  .other-lines{
+    margin-top:8px;
+    display:grid;
+    gap:10px;
+    font-family:system-ui,sans-serif
+  }
+  .other-lines a{
+    color:#fff
+  }
   form.enquiry{
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.15);
+    background:linear-gradient(145deg,rgba(255,255,255,0.10),rgba(255,255,255,0.04));
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
     color:#fff;
     padding:36px;
     border-radius:8px;
     font-family:system-ui,sans-serif
   }
+  form.enquiry h3{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:28px;
+    font-weight:600;
+    margin:0
+  }
+  form.enquiry h3::after{
+    content:"";
+    display:block;
+    width:52px;
+    height:2px;
+    background:var(--gold);
+    margin-top:14px;
+    margin-bottom:28px
+  }
   form.enquiry input,form.enquiry textarea{
     display:block;
     width:100%;
     margin-top:16px;
-    padding:14px;
+    padding:15px 16px;
     background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.20);
+    border:1px solid rgba(255,255,255,0.22);
     color:#fff;
     font:inherit
   }
   form.enquiry input::placeholder,form.enquiry textarea::placeholder{
-    color:rgba(255,255,255,0.65)
+    color:rgba(255,255,255,0.68)
   }
   form.enquiry button{
     margin-top:20px;
     background:var(--gold);
     color:var(--navy);
-    padding:14px 28px;
-    letter-spacing:1px;
-    font-weight:700;
+    padding:15px 28px;
+    letter-spacing:2px;
+    font-weight:800;
     width:100%;
     border:0;
     cursor:pointer;
@@ -416,14 +476,14 @@
       </div>
       <div class="block">
         <div class="lbl">OTHER PARTNER DESKS</div>
-        <div style="margin-top:6px">CA Ankur Malhotra — <a href="tel:+919918647667" style="color:#fff">+91-9918647667</a><a class="tel" href="https://wa.me/919918647667?text=Hello,%20I%20am%20interested%20in%20your%20services." target="_blank" class="whatsapp-btn"><img src="images/WhatsApp_Logo.png" width="20" alt="WhatsApp" style="float:left; margin-right:10px"></a>
-</div></div>
-        <div style="margin-top:6px">CA Shikhar Mehrotra — <a href="tel:+919839604389" style="color:#fff">+91-9839604389</a><a class="tel" href="https://wa.me/919839604389?text=Hello,%20I%20am%20interested%20in%20your%20services." target="_blank" class="whatsapp-btn"><img src="images/WhatsApp_Logo.png" width="20" alt="WhatsApp" style="float:left; margin-right:10px"></a>
-</div></div>
+        <div class="other-lines">
+          <div><img src="images/WhatsApp_Logo.png" width="20" alt="WhatsApp" style="display:inline-block;vertical-align:middle;margin-right:8px">CA Ankur Malhotra — <a href="tel:+919918647667">+91-9918647667</a></div>
+          <div><img src="images/WhatsApp_Logo.png" width="20" alt="WhatsApp" style="display:inline-block;vertical-align:middle;margin-right:8px">CA Shikhar Mehrotra — <a href="tel:+919839604389">+91-9839604389</a></div>
+        </div>
       </div>
     </div>
     <form class="enquiry" action="mailto:alokpandeyandco@gmail.com" method="post" enctype="text/plain">
-      <h3 style="font-size:20px;font-weight:600;margin:0">Request a consultation</h3>
+      <h3>Request a consultation</h3>
       <input required name="name" placeholder="Full name">
       <input required type="email" name="email" placeholder="Email address">
       <input required name="phone" placeholder="Phone">
