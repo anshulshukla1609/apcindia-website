@@ -42,13 +42,11 @@
   .logo{width:44px;height:44px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:700;letter-spacing:1px}
 
   .ca-header-logo{
-    width:44px;
-    height:44px;
+    width:48px;
+    height:48px;
     object-fit:contain;
-    background:#fff;
-    border:1px solid rgba(10,31,68,.18);
-    padding:4px;
-}
+    flex:0 0 auto;
+  }
   aside.quote{position:relative;overflow:hidden;min-height:300px}
   .quote-watermark{
     position:absolute;
@@ -128,17 +126,47 @@
   .office address{margin-top:10px;font-style:normal;font-size:15.5px;line-height:1.7}
 
   /* Contact */
-  .contact-grid{display:grid;gap:64px;padding:0 24px}
-  @media(min-width:900px){.contact-grid{grid-template-columns:1fr 1fr}}
+  .contact-grid{display:grid;gap:50px;align-items:start;padding:0 24px}
+  @media(min-width:900px){.contact-grid{grid-template-columns:55% 45%}}
   .contact .lbl{color:var(--gold);font-size:11px;letter-spacing:2px;font-family:system-ui,sans-serif}
   .contact .block{margin-top:32px;font-family:system-ui,sans-serif;font-size:15px}
   .primary-lines{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:12px}
   .primary-lines .line{padding:14px;background:rgba(10,31,68,.4);border-left:3px solid var(--gold)}
   .primary-lines .name{font-size:13px;color:rgba(255,255,255,.8)}
   .primary-lines a{color:var(--gold);font-size:16px;font-weight:600;text-decoration:none}
-  form.enquiry{background:#fff;color:var(--navy);padding:32px;font-family:system-ui,sans-serif}
-  form.enquiry input,form.enquiry textarea{display:block;width:100%;margin-top:16px;padding:12px;border:1px solid rgba(10,31,68,.27);font:inherit}
-  form.enquiry button{margin-top:20px;background:var(--navy);color:#fff;padding:14px 28px;letter-spacing:1px;font-weight:600;width:100%;border:0;cursor:pointer}
+  form.enquiry{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    color:#fff;
+    padding:36px;
+    border-radius:8px;
+    font-family:system-ui,sans-serif
+  }
+  form.enquiry input,form.enquiry textarea{
+    display:block;
+    width:100%;
+    margin-top:16px;
+    padding:14px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.20);
+    color:#fff;
+    font:inherit
+  }
+  form.enquiry input::placeholder,form.enquiry textarea::placeholder{
+    color:rgba(255,255,255,0.65)
+  }
+  form.enquiry button{
+    margin-top:20px;
+    background:var(--gold);
+    color:var(--navy);
+    padding:14px 28px;
+    letter-spacing:1px;
+    font-weight:700;
+    width:100%;
+    border:0;
+    cursor:pointer;
+    text-transform:uppercase
+  }
 
   /* About */
   .about-grid{display:grid;gap:48px}
