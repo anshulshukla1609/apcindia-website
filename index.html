@@ -40,6 +40,24 @@
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;gap:16px}
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
   .logo{width:44px;height:44px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:700;letter-spacing:1px}
+
+  .ca-header-logo{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    flex:0 0 auto;
+  }
+  aside.quote{position:relative;overflow:hidden;min-height:300px}
+  .quote-watermark{
+    position:absolute;
+    right:30px;
+    bottom:25px;
+    width:180px;
+    opacity:0.05;
+    pointer-events:none;
+    z-index:0;
+  }
+  aside.quote p, aside.quote .sig{position:relative;z-index:1}
   .brand-name{font-weight:700;letter-spacing:1px}
   .brand-sub{font-size:11px;opacity:.7;letter-spacing:2px}
   nav ul{display:none;gap:32px;list-style:none;margin:0;padding:0;font-family:system-ui,sans-serif;font-size:14px}
@@ -141,6 +159,7 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top">
+      <img src="images/ca-logo.png" alt="ICAI CA Logo" class="ca-header-logo">
       <div class="logo">AP</div>
       <div>
         <div class="brand-name">ALOK PANDEY &amp; CO.</div>
@@ -176,6 +195,7 @@
       </div>
     </div>
     <aside class="quote">
+      <img src="images/ca-logo.png" class="quote-watermark" alt="CA Logo">
       <p>"Integrity and precision have been the cornerstones of our practice."</p>
       <div class="sig">— THE PARTNERSHIP</div>
     </aside>
